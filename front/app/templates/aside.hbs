@@ -1,0 +1,16 @@
+aside
+
+<ul>
+
+    {{#each model as |one|}}
+
+      <li>{{@index}}{{one}}</li>
+
+      {{my-list name=one }}
+
+    {{/each}}
+
+</ul>
+
+
+{{outlet}}
