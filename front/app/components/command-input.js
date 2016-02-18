@@ -2,5 +2,5 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName:'p',
-  classNames:['a']
+  classNames:['command-input-box']
 });
