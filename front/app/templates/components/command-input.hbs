@@ -5,7 +5,7 @@
     <span class="user-name">{{commandRecord.userName}}</span>
     <span class="split-code">$</span>
 
-  {{#if text}}
+  {{#if commandRecord.text}}
       <span class="commands text">{{commandRecord.commandInput}}</span>
   {{else}}
     {{input class="commands" type="text" key-up=(action 'commandInput') }}
