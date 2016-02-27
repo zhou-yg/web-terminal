@@ -28,6 +28,32 @@ export default function() {
     this.get('/contacts/:id', ['contact', 'addresses']);
   */
 
+  this.get('/command-records',function(){
+
+    return {
+      data:[{
+        type:'command-record',
+        id:1,
+        attributes:{
+          machineName:'110.2.34.3',
+          directoryName:'root',
+          userName:'zyg',
+          commandInput:'ls',
+        }
+      },{
+        type:'command-record',
+        id:2,
+        attributes:{
+          machineName:'110.2.34.3',
+          directoryName:'admin',
+          userName:'zyg',     
+          commandInput:'cd ..',
+        }
+      }
+     ]
+    }
+  });
+
   /*
     POST shorthands
 

@@ -1,8 +1,6 @@
 import Ember from 'ember';
 
-export default Ember.Component.extend({
-  tagName:'p',
-  classNames:['command-input-box'],
+export default Ember.Controller.extend({
 
   keyDown(e){
     //enter
@@ -10,15 +8,14 @@ export default Ember.Component.extend({
 
       var inputCommand = this.get('inputCommand');
 
-      this.set('directory',inputCommand);
-
       //request
 
     }
   },
   actions:{
     commandInput(value){
-      console.log('Component commandInput');
+
+      console.log('Controller commandInput');
 
       this.set('inputCommand',value);
     }
